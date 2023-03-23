@@ -8,12 +8,12 @@ const config = {
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
       projects: [
-        "nmilbur.github.io",
-        "Nmilbur",
-        "C868_Appointment_Scheduler",
-        "C971_Course_Mobile_App",
-        "C969-Appointment-Scheduler",
-        "C968-Inventory"
+        'nmilbur.github.io',
+        'Nmilbur',
+        'C868_Appointment_Scheduler',
+        'C971_Course_Mobile_App',
+        'C969-Appointment-Scheduler',
+        'C968-Inventory',
       ], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
@@ -55,7 +55,7 @@ const config = {
     'MongoDB',
     'Perl',
     'Django',
-    'jQuery'
+    'jQuery',
   ],
   experiences: [
     {
@@ -139,15 +139,15 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'dark',
+    defaultTheme: 'lemonade',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
-    respectPrefersColorScheme: false,
+    respectPrefersColorScheme: true,
 
     // Hide the ring in Profile picture
     hideAvatarRing: false,

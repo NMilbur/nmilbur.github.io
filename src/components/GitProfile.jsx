@@ -181,14 +181,7 @@ const GitProfile = ({ config }) => {
                         loading={loading}
                         skills={sanitizedConfig.skills}
                       />
-                      <Experience
-                        loading={loading}
-                        experiences={sanitizedConfig.experiences}
-                      />
-                      <Education
-                        loading={loading}
-                        education={sanitizedConfig.education}
-                      />
+
                       <Certification
                         loading={loading}
                         certifications={sanitizedConfig.certifications}
@@ -213,17 +206,18 @@ const GitProfile = ({ config }) => {
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                         blog={sanitizedConfig.blog}
                       />
+                      <Experience
+                        loading={loading}
+                        experiences={sanitizedConfig.experiences}
+                      />
+                      <Education
+                        loading={loading}
+                        education={sanitizedConfig.education}
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-              <footer
-                className={`p-4 footer ${bgColor} text-base-content footer-center`}
-              >
-                <div className="card compact bg-base-100 shadow">
-                  <Footer content={sanitizedConfig.footer} loading={loading} />
-                </div>
-              </footer>
             </Fragment>
           )
         )}
