@@ -4,14 +4,21 @@ const config = {
   github: {
     username: 'nmilbur', // Your GitHub org/user name. (Required)
     sortBy: 'updated', // stars | updated
-    limit: 10, // How many projects to display.
+    limit: 4, // How many projects to display.
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
-      projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      projects: [
+        "nmilbur.github.io",
+        "Nmilbur",
+        "C868_Appointment_Scheduler",
+        "C971_Course_Mobile_App",
+        "C969-Appointment-Scheduler",
+        "C968-Inventory"
+      ], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
-    linkedin: '',
+    linkedin: 'nicholas-milburn-92311979',
     twitter: '',
     mastodon: '',
     facebook: '',
@@ -28,39 +35,49 @@ const config = {
     email: '',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'Python',
     'JavaScript',
     'React.js',
-    'Node.js',
-    'Nest.js',
+    'TypeScript',
+    'SQL',
     'MySQL',
     'PostgreSQL',
     'Git',
-    'Docker',
-    'PHPUnit',
+    'API Development',
+    'HTML',
     'CSS',
-    'Antd',
-    'Tailwind',
+    'Linux',
+    'Bootstrap',
+    'Material UI',
+    'MongoDB',
+    'Perl',
+    'Django',
+    'jQuery'
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Archera',
+      position: 'Software Engineer IV',
+      from: 'September 2022',
+      to: 'March 2023',
+      companyLink: 'https://archera.ai/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Wells Fargo',
+      position: 'Senior Software Engineer',
+      from: 'September 2021',
+      to: 'September 2022',
+      companyLink: 'https://www.wellsfargo.com/',
+    },
+    {
+      company: 'Digital Cheetah Solutions',
+      position: 'Web Application Developer',
+      from: 'July 2016',
+      to: 'September 2021',
+      companyLink: 'https://www.digitalcheetah.com/',
     },
   ],
   /* certifications: [
@@ -73,21 +90,22 @@ const config = {
   ], */
   education: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Western Governors University',
+      degree: 'Masters in Cyber Security and Information Assurance',
+      from: '2021',
+      to: '2022',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Western Governors University',
+      degree: 'Bachelors in Software Engineering',
+      from: '2021',
+      to: '2021',
     },
   ],
 
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
+    /*
     {
       title: 'Project Name',
       description:
@@ -102,12 +120,15 @@ const config = {
       imageUrl: 'https://via.placeholder.com/250x250',
       link: 'https://example.com',
     },
+    */
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
+    /*
     source: 'dev', // medium | dev
     username: 'arifszn', // to hide blog section, keep it empty
     limit: 2, // How many posts to display. Max is 10.
+    */
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -118,7 +139,7 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'winter',
+    defaultTheme: 'dark',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -141,7 +162,6 @@ const config = {
       'corporate',
       'synthwave',
       'retro',
-      'cyberpunk',
       'valentine',
       'halloween',
       'garden',
